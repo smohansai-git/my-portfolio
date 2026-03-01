@@ -1,0 +1,138 @@
+:root{
+    --grad1: linear-gradient(135deg,#667eea,#764ba2);
+    --grad2: linear-gradient(135deg,#43cea2,#185a9d);
+    --grad3: linear-gradient(135deg,#ff512f,#dd2476);
+    --dark:#0f172a;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.6;
+}
+
+/* ===== HERO PARALLAX ===== */
+.hero{
+    height:100vh;
+    background:
+      linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+      url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin-top:10px;
+}
+
+/* ===== SECTIONS ===== */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    font-size:2.2rem;
+    margin-bottom:40px;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:80px;
+    height:5px;
+    background:var(--grad1);
+    position:absolute;
+    bottom:-10px;
+    left:0;
+    border-radius:10px;
+}
+
+/* ===== CARD ===== */
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 15px 30px rgba(0,0,0,.1);
+}
+
+/* ===== SKILLS ===== */
+.skills span{
+    display:inline-block;
+    padding:10px 18px;
+    margin:8px 10px 0 0;
+    border-radius:30px;
+    color:#fff;
+    font-size:.9rem;
+}
+
+.skills span:nth-child(odd){background:var(--grad2);}
+.skills span:nth-child(even){background:var(--grad3);}
+
+/* ===== PARALLAX MID ===== */
+.parallax-mid{
+    height:50vh;
+    background:
+      linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+      url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:2rem;
+    font-weight:600;
+    text-align:center;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:var(--dark);
+    color:#fff;
+    text-align:center;
+    padding:30px;
+}
+
+footer a{
+    color:#38bdf8;
+    margin:0 10px;
+}
+
+/* ===== SCROLL ANIMATION ===== */
+.animate{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all .9s ease;
+}
+
+.animate.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+    .hero h1{font-size:2.5rem;}
+    section{padding:60px 6%;}
+}

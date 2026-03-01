@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohan Sai | Portfolio</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HERO / PARALLAX -->
+<div class="hero">
+    <div class="hero-content animate">
+        <h1>S. Mohan Sai</h1>
+        <p>Aspiring Software Developer | B.Tech Student</p>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+    <h2 class="section-title animate">About Me</h2>
+    <div class="card animate">
+        Detail-oriented B.Tech 3rd-year student with a strong interest in software development
+        and problem-solving. Strong foundation in Python, Java, and C++.
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2 class="section-title animate">Technical Skills</h2>
+    <div class="card skills animate">
+        <span>Python</span>
+        <span>Java</span>
+        <span>C</span>
+        <span>C++</span>
+        <span>Problem Solving</span>
+        <span>Teamwork</span>
+        <span>Communication</span>
+    </div>
+</section>
+
+<!-- PARALLAX BREAK -->
+<div class="parallax-mid">
+    Turning Logic Into Code
+</div>
+
+<!-- EDUCATION -->
+<section>
+    <h2 class="section-title animate">Education</h2>
+    <div class="card animate">
+        <strong>B.Tech (CSM)</strong><br>
+        SITAMS | CGPA: 7.38 | 2027
+    </div>
+    <div class="card animate">
+        <strong>Intermediate</strong><br>
+        Narayana Junior College | 78%
+    </div>
+    <div class="card animate">
+        <strong>SSC</strong><br>
+        Narayana E.M School | 62%
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2 class="section-title animate">Projects</h2>
+    <div class="card animate">
+        <strong>Logic Development & Programming Practice</strong>
+        <ul>
+            <li>Python automation scripts</li>
+            <li>Mathematical problem solving</li>
+            <li>Clean, efficient code</li>
+        </ul>
+    </div>
+</section>
+
+<!-- TRAINING -->
+<section>
+    <h2 class="section-title animate">Internship & Training</h2>
+    <div class="card animate">
+        <strong>AI / ML Training (2024–2025)</strong>
+        <ul>
+            <li>Regression & Classification</li>
+            <li>Neural network basics</li>
+            <li>Data preprocessing</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2 class="section-title animate">Contact</h2>
+    <div class="card animate">
+        📧 mohansai2878@gmail.com<br>
+        📞 9381279177<br>
+        📍 Chittoor, Andhra Pradesh
+    </div>
+</section>
+
+<footer>
+    <a href="https://www.linkedin.com/in/mohan-sai-a45a77393" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/smohansai-git" target="_blank">GitHub</a>
+</footer>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
