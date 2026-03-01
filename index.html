@@ -1,99 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohan Sai | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohan Sai | Portfolio</title>
 
-    <!-- CSS LINK -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- HERO / PARALLAX -->
-<div class="hero">
+<!-- HERO (COLORFUL PARALLAX) -->
+<header class="hero">
     <div class="hero-content animate">
         <h1>S. Mohan Sai</h1>
-        <p>Aspiring Software Developer | B.Tech Student</p>
+        <p>Student Developer • Problem Solver • Tech Learner</p>
     </div>
-</div>
+</header>
 
 <!-- ABOUT -->
-<section>
+<section class="section">
     <h2 class="section-title animate">About Me</h2>
     <div class="card animate">
-        Detail-oriented B.Tech 3rd-year student with a strong interest in software development
-        and problem-solving. Strong foundation in Python, Java, and C++.
+        I am a B.Tech 3rd-year student interested in software development and problem solving.
+        I enjoy building practical applications using Python, Java, C, and C++ and continuously
+        improving my technical skills.
     </div>
 </section>
 
-<!-- SKILLS -->
-<section>
-    <h2 class="section-title animate">Technical Skills</h2>
-    <div class="card skills animate">
+<!-- SKILLS (SMOOTH BARS) -->
+<section class="section">
+    <h2 class="section-title animate">Skills</h2>
+
+    <div class="skill animate">
         <span>Python</span>
+        <div class="bar"><div style="width:80%"></div></div>
+    </div>
+
+    <div class="skill animate">
         <span>Java</span>
-        <span>C</span>
-        <span>C++</span>
+        <div class="bar"><div style="width:65%"></div></div>
+    </div>
+
+    <div class="skill animate">
+        <span>C / C++</span>
+        <div class="bar"><div style="width:60%"></div></div>
+    </div>
+
+    <div class="skill animate">
         <span>Problem Solving</span>
-        <span>Teamwork</span>
-        <span>Communication</span>
+        <div class="bar"><div style="width:75%"></div></div>
     </div>
 </section>
 
-<!-- PARALLAX BREAK -->
-<div class="parallax-mid">
-    Turning Logic Into Code
+<!-- PARALLAX COLOR SECTION -->
+<div class="parallax-color">
+    Building Useful & Real-World Applications
 </div>
 
+<!-- PROJECTS (YOUR REAL PROJECTS) -->
+<section class="section">
+    <h2 class="section-title animate">Projects</h2>
+
+    <div class="project-grid">
+        <div class="card animate">
+            <h3>Resume ATS Score Finder</h3>
+            <p>
+                A web-based tool that analyzes resumes and calculates ATS compatibility scores.
+                Helps users optimize resumes based on keywords and structure.
+            </p>
+            <p><strong>Tech:</strong> Python, NLP concepts, HTML, CSS</p>
+        </div>
+
+        <div class="card animate">
+            <h3>Voice Translation by Text & Speech</h3>
+            <p>
+                An application that converts speech to text, translates it into another language,
+                and converts it back into speech for better communication.
+            </p>
+            <p><strong>Tech:</strong> Python, Speech Recognition, Translation APIs</p>
+        </div>
+
+        <div class="card animate">
+            <h3>Online Election Website</h3>
+            <p>
+                A secure web application for conducting online elections with voter and candidate
+                management, authentication, and vote counting.
+            </p>
+            <p><strong>Tech:</strong> HTML, CSS, JavaScript, Backend Database</p>
+        </div>
+    </div>
+</section>
+
 <!-- EDUCATION -->
-<section>
+<section class="section">
     <h2 class="section-title animate">Education</h2>
+
     <div class="card animate">
         <strong>B.Tech (CSM)</strong><br>
-        SITAMS | CGPA: 7.38 | 2027
+        Sreenivasa Institute of Technology and Management Studies<br>
+        CGPA: 7.42 | Expected 2027
     </div>
+
     <div class="card animate">
         <strong>Intermediate</strong><br>
-        Narayana Junior College | 78%
+        Narayana Junior College — 78%
     </div>
+
     <div class="card animate">
         <strong>SSC</strong><br>
-        Narayana E.M School | 62%
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section>
-    <h2 class="section-title animate">Projects</h2>
-    <div class="card animate">
-        <strong>Logic Development & Programming Practice</strong>
-        <ul>
-            <li>Python automation scripts</li>
-            <li>Mathematical problem solving</li>
-            <li>Clean, efficient code</li>
-        </ul>
-    </div>
-</section>
-
-<!-- TRAINING -->
-<section>
-    <h2 class="section-title animate">Internship & Training</h2>
-    <div class="card animate">
-        <strong>AI / ML Training (2024–2025)</strong>
-        <ul>
-            <li>Regression & Classification</li>
-            <li>Neural network basics</li>
-            <li>Data preprocessing</li>
-        </ul>
+        Narayana E.M School — 62%
     </div>
 </section>
 
 <!-- CONTACT -->
-<section>
+<section class="section contact">
     <h2 class="section-title animate">Contact</h2>
     <div class="card animate">
         📧 mohansai2878@gmail.com<br>
@@ -103,21 +124,23 @@
 </section>
 
 <footer>
-    <a href="https://www.linkedin.com/in/mohan-sai-a45a77393" target="_blank">LinkedIn</a> |
+    <a href="https://www.linkedin.com/in/mohan-sai-a45a77393" target="_blank">LinkedIn</a>
     <a href="https://github.com/smohansai-git" target="_blank">GitHub</a>
 </footer>
-
-<!-- SCROLL ANIMATION SCRIPT -->
+<footer>
+    <p>S MOHAN SAI</p>
+</footer>
+<!-- SCROLL ANIMATION -->
 <script>
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
+const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
         }
     });
-}, { threshold: 0.2 });
+},{threshold:0.2});
 
-document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+document.querySelectorAll(".animate").forEach(el=>observer.observe(el));
 </script>
 
 </body>
